@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+.brand-logo img {
+    height: 50px;
+    padding: 0.5em;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #2a2e30;
+    display: flex;
+    flex-basis: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brand-container {
+    display: flex;
+    flex: 1;
+}
+
+.brand-name-container{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+}
+
+.brand-name-container div{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    flex-direction: row;
+    color: aliceblue;
+    flex-grow: 1;
+}
+
+.nav-menu-container {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+}
+
+.nav-menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.nav-menu-container :hover{
+    background-color: rgb(0, 140, 255);
+}
+
+.container-inicio{
+    display: flex;
+    flex-basis: 74vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    padding: 6rem 6rem 6rem 6rem;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex-basis: 75vh;
+    background-color: rgb(35, 98, 207);
+}
+
+.container-cards-title{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-basis: 20rem;
+    flex-shrink: 1;
+    margin: 1rem;
+    flex-direction: column;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-title {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-content{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-button-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.button-info{
+    background-color: rgb(0, 98, 255);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-button-container :hover{
+    background-color: rgb(54, 131, 255);
+}
+
+.card-icon{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-icon img{
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
