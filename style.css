@@ -10,23 +10,27 @@ body {
 }
 
 .brand-logo img {
+    display: flex;
     height: 50px;
     padding: 0.5em;
 }
 
 .navbar {
-    position: fixed;
     width: 100%;
     flex-basis: auto;
     background-color: #2a2e30;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .brand-container {
     display: flex;
     flex: 2;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 2rem 0rem 2rem;
 }
 
 .brand-name-container{
@@ -50,16 +54,19 @@ body {
 
 .nav-menu-container {
     display: flex;
-    flex: 3;
+    flex: 3 0 30vw;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0rem 2rem 0rem 2rem;
 }
 
 .nav-menu-item{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    flex: 1 0 5rem;
     font-size: 1rem;
+    padding: 1rem;
     flex-wrap: wrap;
 }
 
@@ -71,7 +78,7 @@ body {
 .container-inicio{
     display: flex;
     font-size: 1.2rem;
-    flex-basis: 74vh;
+    flex-basis: 65vh;
     justify-content: center;
     flex-direction: column;
     text-align: center;
