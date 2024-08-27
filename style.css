@@ -17,16 +17,16 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
+    flex-basis: auto;
     background-color: #2a2e30;
     display: flex;
-    flex-basis: 10vh;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .brand-container {
     display: flex;
-    flex: 1;
+    flex: 2;
 }
 
 .brand-name-container{
@@ -39,10 +39,13 @@ body {
 .brand-name-container div{
     display: flex;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     color: aliceblue;
-    flex-grow: 1;
 }
 
 .nav-menu-container {
@@ -56,6 +59,8 @@ body {
     align-items: center;
     justify-content: center;
     flex: 1;
+    font-size: 1rem;
+    flex-wrap: wrap;
 }
 
 
@@ -65,6 +70,7 @@ body {
 
 .container-inicio{
     display: flex;
+    font-size: 1.2rem;
     flex-basis: 74vh;
     justify-content: center;
     flex-direction: column;
@@ -77,7 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    flex-basis: 75vh;
+    flex-basis: 81vh;
     background-color: rgb(35, 98, 207);
 }
 
@@ -115,11 +121,12 @@ body {
     flex-basis: auto;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 1rem 1rem 0 0;
+    flex-wrap: wrap;
 }
 
 .card-content{
@@ -127,8 +134,9 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
 .card-button-container{
@@ -158,4 +166,62 @@ body {
     padding: 0.5rem;
     width: 4rem;
     height: 4rem;
+}
+
+.container-demo{
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-item, .demo-item-rev{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellowgreen;
+    text-align: left;
+}
+
+.demo-item-rev{
+    flex-direction: row-reverse;
+    background-color: red;
+    text-align: right;
+}
+
+.demo-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    background-color: blue;
+}
+
+.demo-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 3rem;
+    flex: 1;
+}
+
+.demo-description{
+    display: flex;
+    padding: 0rem 4rem 4rem 4rem;
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+.demo-video{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 50%;
+}
+
+.demo-video img{
+    display: flex;
+    object-fit: contain;
+    background-color: aqua;
+    max-width: 100vw;
+    max-height: 60vh;
 }
