@@ -11,7 +11,7 @@ function calcular_edad(){
     const month = fecha_nacimiento.toLocaleString('default', { month: 'long' });
     
     alert("Tu fecha de naciemiento es: " + d + " de " + month + " del año " + a);
-    alert("Y tienes " + edad + " años.");
+    alert("Y tienes " + edad + " años de edad.");
 }
 
 setTimeout(calcular_edad, 1500);
